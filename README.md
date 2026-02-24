@@ -49,7 +49,7 @@ Key findings from EDA:
 - ~3.5% missing values in `MINIMUM_PAYMENTS`, ~0.1% in `CREDIT_LIMIT`
 
 #### 📈 Correlation Heatmap
-![Correlation Heatmap](img_correlation_heatmap.png)
+![Correlation Heatmap](./images/img_correlation_heatmap.png)
 
 ---
 
@@ -100,12 +100,12 @@ The model is wrapped in a `sklearn.Pipeline` with `StandardScaler` for reproduci
 #### 🗺️ GMM Clusters — Model Selection (k = 6, 7, 8)
 The chart below shows GMM output for each candidate *k*, projected onto t-SNE and UMAP 2D embeddings:
 
-![GMM Model Selection](img_gmm_clusters.png)
+![GMM Model Selection](./images/img_gmm_clusters.png)
 
 #### 🎯 Final GMM Segmentation (k = 8)
 After fixing *k = 8*, projections confirm tight, well-separated clusters:
 
-![GMM Final Clusters](img_gmm_final_projections.png)
+![GMM Final Clusters](./images/img_gmm_final_projections.png)
 
 ---
 
@@ -132,16 +132,16 @@ DBSCAN was applied as a density-based cross-check to validate the GMM results an
 | 7 | 💎 **The Premium Spenders** | High credit limit, high spend, low cash advance |
 
 #### 📊 Cluster Size Distribution
-![Cluster Sizes](img_cluster_sizes.png)
+![Cluster Sizes](./images/img_cluster_sizes.png)
 
 #### 🌡️ Feature Intensity Heatmap (per cluster)
-![Feature Heatmap](img_feature_heatmap.png)
+![Feature Heatmap](./images/img_feature_heatmap.png)
 
 #### 📦 Spending Feature Distributions by Cluster
-![Box Plots](img_box_plots.png)
+![Box Plots](./images/img_box_plots.png)
 
 #### 🕸️ Radar Profile Overlay
-![Radar Chart](img_radar.png)
+![Radar Chart](./images/img_radar.png)
 
 ---
 
